@@ -1,6 +1,6 @@
 package BlockBreaker;
 
-public class WindowModel {
+public class WindowBaseModel {
 	// Dimensions
 	private int height;
 	private int width;
@@ -13,7 +13,7 @@ public class WindowModel {
 	private String winFooter;
 	
 	// Constructors
-	public WindowModel(){
+	public WindowBaseModel(){
 		height = 480;
 		width = 600;
 		visibility = true;
@@ -27,7 +27,7 @@ public class WindowModel {
 		
 	}
 	
-	public WindowModel(int height, int width, String primaryColor, String secondaryColor, String winwinTitle, String winFooter){
+	public WindowBaseModel(int height, int width, String primaryColor, String secondaryColor, String winwinTitle, String winFooter){
 		this.height = height;
 		this.width = width;
 		this.primaryColor = primaryColor;
