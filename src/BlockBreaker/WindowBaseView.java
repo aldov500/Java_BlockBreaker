@@ -2,6 +2,8 @@ package BlockBreaker;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
@@ -11,14 +13,12 @@ public class WindowBaseView extends JFrame {
 	
 	private JLabel title;
 	private JLabel footer;
-	private JButton button;
-	private int image;
 	
 	// Constructors
 	public WindowBaseView() {
 		super("BlockBreaker");
 	}
-	
+		
 	public void displayTitle(String title) {
 		this.title = new JLabel(title, SwingConstants.CENTER);
 		this.title.setBounds(61, 0, 400, 20);
@@ -41,13 +41,7 @@ public class WindowBaseView extends JFrame {
 	    setVisible(visible);
 			
 	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	    setLayout(null);
+	    //setLayout(null);
 	}
 	
-	public void addButton(String caption, int coordX, int coordY, int width, int height) {
-		button = new JButton(caption);
-		button.setBounds(coordX,coordY,width,height);
-        add(button);
-        
-	}
 }

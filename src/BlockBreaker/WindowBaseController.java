@@ -15,9 +15,9 @@ public class WindowBaseController {
 		view = new WindowBaseView();
 		model = new WindowBaseModel();
 		
-		setCaptions(title, footer);
+		//setCaptions(title, footer);
 		
-		displayWindow();	
+		//displayWindow();	
 		
 	}
 	
@@ -58,11 +58,9 @@ public class WindowBaseController {
 							true);
 	}
 	
-	public void addButton(String caption, int coordX, int coordY, int width, int height) {
-		view.addButton(caption, coordX, coordY, width, height);
-	}
 	
 	public void addImage(String path) {
 		
 	}
+	
 }

@@ -1,7 +1,11 @@
 package main;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import BlockBreaker.WindowBaseController;
 import BlockBreaker.WindowStartController;
+import BlockBreaker.WindowStartView;
 
 public class Main {
 
@@ -13,8 +17,12 @@ public class Main {
 		controller.displayWindow();		
 		 */
 		WindowStartController controller = new WindowStartController();
-	
+		
+		//controller.displayInterface();
+		
+		//WindowStartView view = new WindowStartView();
 
 	}
+	
 
 }
